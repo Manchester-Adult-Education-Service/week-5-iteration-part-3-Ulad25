@@ -29,8 +29,12 @@
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-
-
+friend1 = input("What is your name? ")
+friend2 = input("What is your name? ")
+friend3 = input("What is your name? ")
+friends = [friend1, friend2, friend3]
+for friend in friends:
+    print("Hello " + friend + "!")
 
 # -------------------------------------------
 # Task 2: Number Input and Decisions
@@ -59,9 +63,16 @@
 #     print("Message for other cases")
 
 # Write your code below:
-
-
-
+number1 = int(input("Enter a number between 1 and 10: "))
+while number1 < 1 or number1 > 10:
+    print("Invalid number, try again!")
+    number1 = int(input("Enter a number between 1 and 10: "))
+if number1 < 0:
+    print("You enter a negative number!")
+elif number1 > 0:
+    print("You ener a positive number! ") 
+else:
+    print("Check the number!")      
 # -------------------------------------------
 # Task 3: Mini Quiz Project Using a List
 # -------------------------------------------
@@ -84,7 +95,17 @@
 #     #     print("Check your answer")
 
 # Write your code below:
-
+questions = ["What is 2 + 3?", "Type the color of the grass.", "What is the king's name?"]
+for i in questions:
+    answer = input(i + " ")
+if answer == "5":
+    print("Correct!")
+elif answer == "Green":
+    print("Correct!")
+elif answer == "Charles III":
+    print("Correct!")
+else: 
+    print("Check your answer!")    
 
 
 # -------------------------------------------
